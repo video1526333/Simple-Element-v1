@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="panel-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">My Admin</div>
+      <nav>
+        <a href="#" class="btn_sied">Dashboard</a>
+        <a href="#" class="btn_sied">Users</a>
+        <a href="#" class="btn_sied">Settings</a>
+        <a href="#" class="btn_sied">Reports</a>
+      </nav>
+      <button id="toggleSidebar" class="toggle-btn btn_sied">☰</button>
+    </aside>
+
+    <div class="main">
+      <header>
+        <h1 class="font_sied_p_006">Dashboard</h1>
+        <input type="button" value="Logout" class="btn_sied"/>
+      </header>
+
+      <section class="content">
+        <div class="card">
+          <h2 class="font_sied_p_005">Welcome!</h2>
+          <p class="font_sied_000">This is your new admin panel, styled with your CSS logic.</p>
+        </div>
+        <!-- Add more cards, tables, forms using your .btn_sied, .textbox_001_sied, etc. -->
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Toggle the sidebar collapse/expand
+    document.getElementById('toggleSidebar').addEventListener('click', function(){
+      document.getElementById('sidebar').classList.toggle('collapsed');
+    });
+  </script>
+</body>
+</html> 

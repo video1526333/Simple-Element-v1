@@ -1,0 +1,93 @@
+/* ================================== */
+/* YOUR EXISTING CSS LOGIC (paste here) */
+/* initialization [start] */
+:root{
+  --backg-color:white;
+  --backg-color-hover:black;
+  --main-color:black;
+  --main-color-hover:white;
+  /* … ALL YOUR VARIABLES … */
+}
+/* Font Size [start] */
+.font_sied_000{ /* … */ }
+.font_sied_p_001{ /* … */ }
+/* … all your component classes … */
+/* Select Option [end  ] */
+/* ================================== */
+
+/* Panel Layout [start] */
+.panel-container {
+  display: flex;
+  height: 100vh;
+  font-family: var(--font-family-000);
+  background: var(--backg-color-000);
+}
+.sidebar {
+  flex: 0 0 240px;
+  background: var(--main-color);
+  color: var(--backg-color-000);
+  display: flex;
+  flex-direction: column;
+  transition: flex-basis 0.3s;
+}
+.sidebar.collapsed {
+  flex-basis: 60px;
+}
+.sidebar .logo {
+  padding: 1rem;
+  text-align: center;
+  font-size: var(--font-size-p-004);
+}
+.sidebar nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar nav a.btn_sied {
+  margin: 0.25rem 0;
+  padding: 0.75rem 1rem;
+  border: none;
+  text-align: left;
+  width: calc(100% - 2rem);
+}
+.sidebar.collapsed nav a.btn_sied {
+  text-indent: -9999px;
+  padding: 0.75rem 0;
+}
+.toggle-btn {
+  margin: 1rem;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: var(--font-size-p-006);
+}
+
+/* Main region */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: var(--backg-color-000-hover);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color-000);
+}
+.content {
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Simple card for demo */
+.card {
+  background: var(--backg-color-000);
+  border: 2px solid var(--border-color-000);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+/* Panel Layout [end] */ 
